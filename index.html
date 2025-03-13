@@ -5,7 +5,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A weblog dedicated to exploring the human body and its systems.">
     <title>The Human Body Blog</title>
-    <link rel="stylesheet" href="styles.css">
+    <style> 
+        /* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img {
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #34495e;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    animation: fadeInHeader 2s ease-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    text-color: #ecf0f1;
+}
+header p {
+    font-size: 1.2rem;
+}
+
+/* Section Styling */
+section {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 900px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards;
+}
+
+/* Section Titles */
+h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+h3, h4 {
+    color: #2c3e50;
+    margin: 10px 0;
+}
+
+/* Paragraphs */
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: black;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Link Styling */
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Fade-in animation for sections */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header fade-in animation */
+@keyframes fadeInHeader {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        width: 90%;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+    </style>
 </head>
 <body>
     <header>
